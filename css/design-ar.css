@@ -1,0 +1,130 @@
+html,
+body {
+    direction: rtl;
+    font-family: monospace !important;
+}
+
+.header .container .clan .call{
+    gap: 4px;
+}
+
+.header .container .clan .call a{
+    direction: ltr;
+}
+
+.btn::after{
+    content: "";
+    position: absolute;
+    transition: var(--main-transition);
+    width: 2px;
+    height: 65px;
+    left: -15px !important;
+    background-image: var(--main-color);
+    top: -5px;
+    right: auto;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    transition: var(--main-transition);
+    width: 122%;
+    background-color: white;
+    height: 2px;
+    right: -5px;
+    bottom: -12px;
+    background-image: var(--main-color);
+}
+
+.services .container .serv .sr .read::before {
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 2px;
+    background: var(--main-color);
+    top: 24px;
+    right: 0;
+    transition: 0.5s;
+}
+
+.services .container .serv .sr .read::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background: var(--main-color);
+    top: 20px;
+    right: 0;
+    transition: 0.5s;
+}
+
+.footer .container .bottom-section .right .contact ul li a{
+    direction: ltr;
+}
+
+.info .title{
+    padding-right: 5px;
+    border-right: 5px solid var(--text-color);
+    border-left: 0 !important;
+}
+
+.services-page .container .serv .sr .read::before {
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 2px;
+    background: var(--main-color);
+    top: 24px;
+    right: 0;
+    transition: 0.5s;
+}
+
+.services-page .container .serv .sr .read::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background: var(--main-color);
+    top: 20px;
+    right: 0;
+    transition: 0.5s;
+}
+
+.accounting-page .container .info .title{
+    flex-direction: column-reverse;
+}
+
+.tax-page .container .info .title{
+    flex-direction: column-reverse;
+}
+
+.landing .container .content .text .major{
+    font-family: monospace;
+}
+
+.tax-page .container .info h2{
+    padding-left: 0;
+    border-left: 0px solid var(--text-color);
+    padding-right: 5px;
+    border-right: 5px solid var(--text-color);
+    margin-top: 25px;
+}
+
+.sl-img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .sl-img{
+        height: auto;
+    }
+}
+
+.slider-container{
+    direction: ltr;
+}
+
+#ar-one{
+    direction: rtl;
+}
